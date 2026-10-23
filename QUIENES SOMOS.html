@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+ 
+  <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+
+  <!-- Menú de navegación -->
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html"><span class="lang-es">inicio</span></a></li>
+      <li><a href="QUIENES SOMOS.html"><span class="lang-es">QUIENES SOMOS</span></a></li>
+      <li><a href="EVIDENCIAS.html"><span class="lang-es">EVIDENCIAS</span></a></li>
+      <li><a href="SERVICIOS.html"><span class="lang-es">SERVICIOS</span></a></li>
+      <li><a href="CONTACTO.html"><span class="lang-es">CONTACTO</span></a></li>
+      <li><a href="SOLUCION TECNOLOGICA.html"><span class="lang-es">SOLUCIÓN TECNOLÓGICA</span></a></li>
+    </ul> 
+  </nav> 
+<div> 
+ <img src="banner 1.png" alt="banner"
+</div> 
+  <div class="botones">
+    <button onclick="mostrarImagen(1)">Imagen 1</button>
+    <button onclick="mostrarImagen(2)">Imagen 2</button>
+    <button onclick="mostrarImagen(3)">Imagen 3</button>
+    <button onclick="mostrarImagen(4)">Imagen 4</button>
+  </div>
+
+  
+  <div id="contenedor">
+    <img id="img1" src="INTRODUCCION.png" alt="Introducción" style="display:block;">
+    <img id="img2" src="mision.png" alt="Misión" style="display:none;">
+    <img id="img3" src="objetivo g.png" alt="Objetivo General" style="display:none;">
+    <img id="img4" src="vision.png" alt="visión" style="display:none;"> 
+  </div>
+
+
+  
+  
+
+  <script>
+    function mostrarImagen(num) {
+      document.getElementById("img1").style.display = "none";
+      document.getElementById("img2").style.display = "none";
+      document.getElementById("img3").style.display = "none";
+      document.getElementById("img4").style.display = "none";
+
+      var seleccionada = document.getElementById("img" + num);
+      if (seleccionada) {
+        seleccionada.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
